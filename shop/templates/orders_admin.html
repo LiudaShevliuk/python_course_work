@@ -1,0 +1,30 @@
+    {% extends "layout.html" %}
+    {% block content %}
+        {% for order in orders %}
+            <article class="media menu-container forms-border-style">
+                <div class="media-body content-section">
+                    <p class="article-content"> <b>First name:  </b>{{ order.first_name }}  <b>Last name:  </b>{{ order.last_name }} </p>
+
+                {% for product in order.cart.products %}
+                    <article class="media content-section">
+                        <div class="media-body">
+                            <p class="article-content"><b>Product:  </b> {{ product.p_name }}
+                                <b>Price:  </b> {{ product.price }} $
+                            </p>
+                        </div>
+                         <img class="account-img" src="{{ url_for('static', filename='images/'+ product.image)}}">
+                    </article>
+                {% endfor %}
+
+                <form method="POST" action="/orders">
+                    <p>
+                        <p class="top-line pt-3" style="font-weight: 700; font-size: 20px; text-align: right;">Total price: {{ order.cart.total_price }} $</p>
+                        <p style="text-align: right">
+                            <button class="btn but" value="{{ order.id }}" name="order_id" type="submit">Close order</button>
+                        </p>
+                    </p>
+                </form>
+                </div>
+            </article>        
+        {% endfor %}
+    {% endblock content %}

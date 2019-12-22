@@ -1,0 +1,162 @@
+body {
+  background: #ffffff;
+  color: #333333;
+  margin-top: 8rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #444444;
+}
+
+.bg-steel {
+  background-color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #000000;
+  font-weight: 700;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #000000;
+  border-bottom: 3px solid #ff5733;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 700;
+}
+
+.content-section {
+  background: #ffffff;
+  padding: 20px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  
+}
+
+.menu-container {
+   display: flex;
+   justify-content: center;    /* Add this */
+   padding: 20px 0;
+}
+
+.product-section {
+  width: 350px;
+  height: auto;
+  margin-right: 10px; 
+  margin-left: 10px;
+  float: left;
+}
+
+.article-title {
+  color: #000000;
+  font-weight: 400;
+}
+
+a.article-title:hover {
+  color: #000000;
+  text-decoration: none;
+  border-bottom: 3px solid #ff5733;
+}
+
+.article-content {
+  white-space: pre-line;
+  text-align: justify
+}
+
+.article-img {
+  height: 250px;
+  width: 250px;
+  vertical-align: middle;
+  padding-bottom: 20px;
+}
+
+.article-metadata {
+  padding-bottom: 1px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #e3e3e3
+}
+
+.article-metadata a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.article-svg {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.account-img {
+  height: 100px;
+  width: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+
+.account-heading {
+  font-size: 2.5rem;
+}
+
+.button {
+    display: inline-block;
+	height: 50px;
+    line-height: 50px;
+    position: relative;
+    border: 1px solid white;
+    padding: 0 1rem;
+}
+
+.but {
+  background-color: #ffffff;
+  border-color: #ff5733;
+  font-size: 18px;
+  font-weight: 700;
+
+}
+
+.footer {
+  position: fixed;
+  bottom: 10px;
+ }
+
+.forms-border-style {
+  width: 600px;
+}
+
+.forms-style {
+  width: 500px;
+}
+
+.img-alt{
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.img-alt:hover{
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 3px solid #ff5733;
+}
+
+.bottom-line {
+  border-bottom: 3px solid #ff5733;
+}
+
+.top-line {
+  border-top: 3px solid #ff5733;
+}
+
+.cart-img {
+  height: 50px;
+  width: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}

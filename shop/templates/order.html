@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block content %}
+ <article class="media content-section menu-container forms-border-style">
+<div class="container">
+  <legend class="bottom-line mb-4">Your Order</legend>
+  <div class="row">
+    <div class="col-sm">
+      
+                {% for product in cart.products %}
+                <div class="content-section">
+                <h4>{{ product.p_name }}</h4>
+                 <p>{{ product.price }} $</p>
+                 </div>
+                {% endfor %}
+
+                <h2 class="top-line pt-3" style="font-weight: 700; font-size: 20px; text-align: right;">Total price: {{ cart.total_price }} $</h2>
+
+    </div>            
+
+    <div class="col-sm">
+                <form class="form-control form-control-lg" method="POST" action="/submit">
+                
+                      First name:<br>
+                      <input type="text" name="firstname"><br>
+                      Last name:<br>
+                      <input type="text" name="lastname"><br>
+                      Shipping address:<br>
+                      <input type="text" name="shipping_address">
+                
+                 <p style="text-align: right"><button class="btn but" style="margin-top: 20px" value="{{ cart.id }}" name="cart_id" type="submit">Order</button></p>
+                </form>
+              </div>
+    </div>
+</div>
+</article>
+{% endblock content %}
